@@ -1,0 +1,127 @@
+{
+  "LT1": {
+    "name": "Kutir Jyoti Service",
+    "fixedCharge": 25,
+    "slabs": [
+      { "upto": 20, "rate": 2.55 },
+      { "upto": null, "rate": 3.55 }
+    ]
+  },
+  "LT2": {
+    "name": "Domestic Service",
+    "fixedCharge": 50,
+    "slabs": [
+      { "upto": 100, "rate": 4.90 },
+      { "upto": 200, "rate": 7.10 },
+      { "upto": null, "rate": 8.20 }
+    ]
+  },
+  "LT3": {
+    "name": "Non-Profit Public Service",
+    "fixedCharge": 60,
+    "slabs": [
+      { "upto": 150, "rate": 7.60 },
+      { "upto": null, "rate": 8.30 }
+    ]
+  },
+  "LT4": {
+    "name": "Commercial Service",
+    "fixedCharge": 80,
+    "slabs": [
+      { "upto": 150, "rate": 8.20 },
+      { "upto": null, "rate": 8.45 }
+    ]
+  },
+  "LT5": {
+    "name": "Public Lighting Service",
+    "fixedCharge": 80,
+    "slabs": [
+      { "upto": null, "rate": 11.35 }
+    ]
+  },
+  "LT6": {
+    "name": "Public Water Works",
+    "fixedCharge": 90,
+    "slabs": [
+      { "upto": null, "rate": 11.10 }
+    ]
+  },
+  "LT7": {
+    "name": "Irrigation & Agriculture Service",
+    "fixedCharge": 50,
+    "slabs": [
+      { "upto": null, "rate": 3.80 }
+    ]
+  },
+  "LT8": {
+    "name": "Industrial Service",
+    "fixedCharge": 80,
+    "slabs": [
+      { "upto": 400, "rate": 7.10 },
+      { "upto": null, "rate": 8.05 }
+    ]
+  },
+  "LT9": {
+    "name": "Electric Vehicle Charging Stations",
+    "fixedCharge": 75,
+    "slabs": [
+      { "upto": null, "rate": 8.20 }
+    ]
+  },
+  "HT1": {
+    "name": "Domestic Service",
+    "fixedCharge": 50,
+    "slabs": [
+      { "upto": null, "rate": 8.65 }
+    ]
+  },
+  "HT2": {
+    "name": "Non-Profit Public Service",
+    "fixedCharge": 60,
+    "slabs": [
+      { "upto": null, "rate": 8.75 }
+    ]
+  },
+  "HT3": {
+    "name": "Commercial Service",
+    "fixedCharge": 80,
+    "slabs": [
+      { "upto": null, "rate": 8.90 }
+    ]
+  },
+  "HT4": {
+    "name": "Public Water Works",
+    "fixedCharge": 90,
+    "slabs": [
+      { "upto": null, "rate": 9.85 }
+    ]
+  },
+  "HT5": {
+    "name": "Irrigation & Agriculture Service",
+    "fixedCharge": 50,
+    "slabs": [
+      { "upto": null, "rate": 3.85 }
+    ]
+  },
+  "HT6": {
+    "name": "Industrial Service",
+    "fixedCharge": 80,
+    "slabs": [
+      { "upto": null, "rate": 9.05 }
+    ]
+  },
+  "HT7": {
+    "name": "Bulk Supply within the State",
+    "fixedCharge": 90,
+    "slabs": [
+      { "upto": null, "rate": 6.85 }
+    ]
+  },
+  "HT8": {
+    "name": "Electric Vehicle Charging Stations",
+    "fixedCharge": 75,
+    "slabs": [
+      { "upto": null, "rate": 8.65 }
+    ]
+  }
+}

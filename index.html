@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&E Billing Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>P&E Billing Calculator</h1>
+    <p class="subtitle">
+        Mizoram Power & Electricity Department<br>
+        Prorata Billing Calculator
+    </p>
+
+    <div class="card">
+
+        <label>Consumer Category</label>
+
+        <select id="category">
+
+            <option value="">-- Select Category --</option>
+
+            <optgroup label="LT Categories">
+
+                <option value="LT1">LT-1 Kutir Jyoti Service</option>
+
+                <option value="LT2">LT-2 Domestic Service</option>
+
+                <option value="LT3">LT-3 Non-Profit Public Service</option>
+
+                <option value="LT4">LT-4 Commercial Service</option>
+
+                <option value="LT5">LT-5 Public Lighting Service</option>
+
+                <option value="LT6">LT-6 Public Water Works</option>
+
+                <option value="LT7">LT-7 Irrigation & Agriculture</option>
+
+                <option value="LT8">LT-8 Industrial Service</option>
+
+                <option value="LT9">LT-9 EV Charging Station</option>
+
+            </optgroup>
+
+            <optgroup label="HT Categories">
+
+                <option value="HT1">HT-1 Domestic Service</option>
+
+                <option value="HT2">HT-2 Non-Profit Public Service</option>
+
+                <option value="HT3">HT-3 Commercial Service</option>
+
+                <option value="HT4">HT-4 Public Water Works</option>
+
+                <option value="HT5">HT-5 Irrigation & Agriculture</option>
+
+                <option value="HT6">HT-6 Industrial Service</option>
+
+                <option value="HT7">HT-7 Bulk Supply</option>
+
+                <option value="HT8">HT-8 EV Charging Station</option>
+
+            </optgroup>
+
+        </select>
+
+        <label>Contracted Load (kW)</label>
+        <input
+            type="number"
+            id="load"
+            step="0.01"
+            placeholder="Enter Contracted Load">
+
+        <label>Previous Reading</label>
+        <input
+            type="number"
+            id="previous"
+            step="0.01"
+            placeholder="Previous Meter Reading">
+
+        <label>Current Reading</label>
+        <input
+            type="number"
+            id="current"
+            step="0.01"
+            placeholder="Current Meter Reading">
+
+        <label>Billing Days</label>
+        <input
+            type="number"
+            id="days"
+            placeholder="Number of Billing Days">
+
+                    <label>Arrear (₹)</label>
+        <input
+            type="number"
+            id="arrear"
+            value="0"
+            placeholder="Arrear Amount">
+
+        <label>Adjustment (+/-)</label>
+        <input
+            type="number"
+            id="adjustment"
+            value="0"
+            placeholder="Adjustment Amount">
+
+        <button id="calculateBtn">
+            Calculate Bill
+        </button>
+
+        <button id="resetBtn">
+            Reset
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Bill Details</h2>
+
+        <table>
+
+            <tr>
+                <td>Units Consumed</td>
+                <td id="units">0.00</td>
+            </tr>
+
+            <tr>
+                <td>Energy Charge</td>
+                <td id="energy">₹0.00</td>
+            </tr>
+
+            <tr>
+                <td>Fixed Charge</td>
+                <td id="fixed">₹0.00</td>
+            </tr>
+
+            <tr>
+                <td>Subsidy</td>
+                <td id="subsidy">-₹0.00</td>
+            </tr>
+
+            <tr class="total-row">
+                <td>Total Bill</td>
+                <td id="total">₹0.00</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    </div>
+
+<footer>
+
+    <hr>
+
+    <p>
+        Developed by<br>
+        <strong>mAdX</strong>
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

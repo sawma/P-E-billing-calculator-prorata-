@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f2f5f9;
+    padding:30px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#003366;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+    line-height:1.5;
+}
+
+.card{
+    background:#ffffff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:6px;
+    font-weight:bold;
+    color:#333;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border:1px solid #0066cc;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:18px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:bold;
+}
+
+#calculateBtn{
+    background:#0066cc;
+    color:white;
+}
+
+#calculateBtn:hover{
+    background:#004fa3;
+}
+
+#resetBtn{
+    background:#777;
+    color:white;
+}
+
+#resetBtn:hover{
+    background:#555;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+table tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+.total-row{
+    background:#0066cc;
+    color:white;
+    font-weight:bold;
+}
+
+h2{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+footer{
+    text-align:center;
+    color:#666;
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+hr{
+    margin:20px 0;
+}
+
+@media(max-width:600px){
+
+    body{
+        padding:15px;
+    }
+
+    .card{
+        padding:18px;
+    }
+
+    h1{
+        font-size:26px;
+    }
+
+    input,
+    select,
+    button{
+        font-size:15px;
+    }
+
+}
