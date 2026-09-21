@@ -63,77 +63,6 @@ const TARIFF_CONFIG = {
       { "upto": 400, "rate": 7.10, "fullRate": 11.81 },
       { "upto": null, "rate": 8.05, "fullRate": 12.27 }
     ]
-  },
-    "LT9": {
-    "name": "Electric Vehicle Charging Stations",
-    "fixedCharge": 75.00,
-    "slabs": [
-      { "upto": null, "rate": 8.20, "fullRate": 0.00 }
-    ]
-  },
-
-  "HT1": {
-    "name": "HT Domestic Service",
-    "fixedCharge": 50.00,
-    "slabs": [
-      { "upto": null, "rate": 8.65, "fullRate": 9.07 }
-    ]
-  },
-
-  "HT2": {
-    "name": "HT Non-Profit Public Service",
-    "fixedCharge": 60.00,
-    "slabs": [
-      { "upto": null, "rate": 8.75, "fullRate": 9.18 }
-    ]
-  },
-
-  "HT3": {
-    "name": "HT Commercial Service",
-    "fixedCharge": 80.00,
-    "slabs": [
-      { "upto": null, "rate": 8.90, "fullRate": 9.52 }
-    ]
-  },
-
-  "HT4": {
-    "name": "HT Public Water Works",
-    "fixedCharge": 90.00,
-    "slabs": [
-      { "upto": null, "rate": 9.85, "fullRate": 10.84 }
-    ]
-  },
-
-  "HT5": {
-    "name": "HT Irrigation & Agriculture Service",
-    "fixedCharge": 50.00,
-    "slabs": [
-      { "upto": null, "rate": 3.85, "fullRate": 11.39 }
-    ]
-  },
-
-  "HT6": {
-    "name": "HT Industrial Service",
-    "fixedCharge": 80.00,
-    "slabs": [
-      { "upto": null, "rate": 9.05, "fullRate": 10.07 }
-    ]
-  },
-
-  "HT7": {
-    "name": "HT Bulk Supply within the State",
-    "fixedCharge": 90.00,
-    "slabs": [
-      { "upto": null, "rate": 6.85, "fullRate": 10.19 }
-    ]
-  },
-
-  "HT8": {
-    "name": "HT Electric Vehicle Charging Stations",
-    "fixedCharge": 75.00,
-    "slabs": [
-      { "upto": null, "rate": 8.65, "fullRate": 0.00 }
-    ]
   }
 };
 
@@ -277,10 +206,12 @@ function calculateBill() {
     // DISPLAY OUTPUTS (P&E Department Tih Dan Chiah Chiah)
     // ====================================================================
     unitsText.innerHTML = unit.toFixed(2);
-    
-    // P&E precision rounding mil hian (.76) chiah chiah a rawn chhuak tawh ang e
-    energyText.textContent = "₹" + (Math.round(fullEnergy * 100) / 100).toFixed(2);
+    energyText.textContent = "₹" + fullEnergy.toFixed(2);
     fixedText.textContent = "₹" + fixedCharge.toFixed(2);
-    subsidyText.textContent = "-₹" + (Math.round(subsidy * 100) / 100).toFixed(2);
-    totalText.textContent = "₹" + Math.round(total).toFixed(2);
+    
+    // Subsidy hmaa minus sign i dah tawh kha lo la awm reng se
+    subsidyText.textContent = "-₹" + subsidy.toFixed(2); 
+    
+    // Heta 'Math.round' kha paih a ni a, decimal hmun hnih thleng a rawn pho chhuak ang
+    totalText.textContent = "₹" + total.toFixed(2);
 }
